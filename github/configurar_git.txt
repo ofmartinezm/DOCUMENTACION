@@ -1,1 +1,40 @@
-git clone https://github.com/ofmartinezm/manzover.git
+Preparar el entorno de GitHub.
+GitHub usa una clave ssh para establecer una conexión segura entre nosotros y el servidor de git. Si no disponemos de una debemos generarla y añadir la misma a nuestro perfil de GitHub.
+Para generar una nueva clave, desde el terminal debemos ejecutar los siguientes comandos:
+$ ssh-keygen -t rsa -C "your_email@yourcompany.com"
+$ ssh-keygen -t rsa -C "your_email@yourcompany.com"
+
+git add *
+Para revisar lo añadido al repositorio podemos ejecutar el siguiente comando:
+git status
+git status
+Todo lo que devuelva el listado será lo que se suba con el proyecto.
+
+Configurando el proxy:
+$ git config --global http.proxy http://direccion_ip_proxy:puerto
+$ git config --global http.proxy http://proxy_username:proxy_password@proxy_ip:port
+
+Inicializando un repositorio en un directorio existente
+$ git init
+
+Solo queda hacer un commit, asignar el repositorio remoto y hacer un push
+$  git commit -m 'Subo la estructura del proyecto al repositorio de GitHub'
+$  git remote add origin git@github.com:ofmartinezm/my_repositorio.git
+$  git push -u origin master
+
+
+
+
+Clonando un repositorio existente
+$ git clone git://github.com/schacon/grit.git
+$ git clone https://github.com/ofmartinezm/manzover.git
+
+
+Con este comando se valida cuales cambios estan pendientes.
+git status
+
+Para subir un archivo hay que ubicarse en la carpeta del repositorio y seguir estos pasos:
+git add archivo
+git commit -m "comentario"
+git push
+
