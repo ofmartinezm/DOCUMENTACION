@@ -2,7 +2,6 @@ Preparar el entorno de GitHub.
 GitHub usa una clave ssh para establecer una conexión segura entre nosotros y el servidor de git. Si no disponemos de una debemos generarla y añadir la misma a nuestro perfil de GitHub.
 Para generar una nueva clave, desde el terminal debemos ejecutar los siguientes comandos:
 $ ssh-keygen -t rsa -C "your_email@yourcompany.com"
-$ ssh-keygen -t rsa -C "your_email@yourcompany.com"
 
 git add *
 Para revisar lo añadido al repositorio podemos ejecutar el siguiente comando:
@@ -17,12 +16,20 @@ $ git config --global http.proxy http://proxy_username:proxy_password@proxy_ip:p
 Inicializando un repositorio en un directorio existente
 $ git init
 
+La forma más habitual de invocar el comando git-add es:
+$ git add .
+
+Sin embargo, los ficheros borrados no se actualizan en el índice. En este caso, tendríamos que ejecutar el comando git rm app/assets/images/rails.png:
+$ git rm app/assets/images/rails.png
+
+
 Solo queda hacer un commit, asignar el repositorio remoto y hacer un push
 $  git commit -m 'Subo la estructura del proyecto al repositorio de GitHub'
 $  git remote add origin git@github.com:ofmartinezm/my_repositorio.git
 $  git push -u origin master
 
-
+git remote add origin git@github.com:ofmartinezm/MiGeoCundinamarcaII.git
+git remote set-url origin https://github.com/ofmartinezm/MiGeoCundinamarcaII.git
 
 
 Clonando un repositorio existente
@@ -38,7 +45,10 @@ git add archivo
 git commit -m "comentario"
 git push
 
+
 url de consulta:
+http://www.cristalab.com/tutoriales/introduccion-a-github-en-linux-ubuntu-c106086l/
+http://aprendegit.com/opciones-del-comando-git-add/
 http://conociendogithub.readthedocs.org/en/latest/data/dinamica-de-uso/
 http://rogerdudler.github.io/git-guide/index.es.html
 https://git-scm.com/book/es/v1/Fundamentos-de-Git-Guardando-cambios-en-el-repositorio
