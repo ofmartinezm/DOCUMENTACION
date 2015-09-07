@@ -38,3 +38,7 @@ git add archivo
 git commit -m "comentario"
 git push
 
+url de consulta:
+http://conociendogithub.readthedocs.org/en/latest/data/dinamica-de-uso/
+http://rogerdudler.github.io/git-guide/index.es.html
+https://git-scm.com/book/es/v1/Fundamentos-de-Git-Guardando-cambios-en-el-repositorio
