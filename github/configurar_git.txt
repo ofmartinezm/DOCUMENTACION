@@ -13,6 +13,10 @@ Configurando el proxy:
 $ git config --global http.proxy http://direccion_ip_proxy:puerto
 $ git config --global http.proxy http://proxy_username:proxy_password@proxy_ip:port
 
+Si estamos ahora con una conexión directa a internet, hay que eliminar el proxy de la configuración, esto se consigue con unset:
+$ git config --global --unset http.proxy
+$ git config --global --unset https.proxy
+
 Inicializando un repositorio en un directorio existente
 $ git init
 
