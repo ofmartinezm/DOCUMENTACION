@@ -2,6 +2,8 @@ https://git-scm.com/book/es/v1/Empezando-Instalando-Git
 instalar si estás en una distribución basada en Debian como Ubuntu, prueba con apt-get:
 $ apt-get install git
 
+http://conociendogithub.readthedocs.io/en/latest/data/dinamica-de-uso/
+
 Preparar el entorno de GitHub.
 GitHub usa una clave ssh para establecer una conexión segura entre nosotros y el servidor de git. Si no disponemos de una debemos generarla y añadir la misma a nuestro perfil de GitHub.
 Para generar una nueva clave, desde el terminal debemos ejecutar los siguientes comandos:
