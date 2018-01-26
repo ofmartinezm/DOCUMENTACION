@@ -1,3 +1,6 @@
+--blog libro de git
+https://git-scm.com/book/en/v2
+
 --tutorial
 https://git-scm.com/book/es/v2/Fundamentos-de-Git-Guardando-cambios-en-el-Repositorio
 
